@@ -1,0 +1,24 @@
+#include <stdio.h>
+intmain()
+{
+    float r;
+    float x,y;
+    float x1,y1;
+    printf("enter the coordinates of center of cirlce x=\n y=\n",%f,%f );
+    scanf("%f,%f",&x,&y);
+    printf("enter radius of cirlce r=",%f);
+    scanf("%f",&r);
+    printf("enter coordinates of points x1=\n y1=\n",%f,%f);
+    scanf("%f,%f",&x1,&y1);
+    for(x1^2+y1^2-x^2-y^2-2x*x1-2y*y1-r^2<0){
+        printf("the point lies inside the circle\n");
+    }
+    for(x1^2+y1^2-x^2-y^2-2x*x1-2y*y1-r^2=0){
+        printf("the point lies on the cirlce\n");
+    }
+    for(x1^2+y1^2-x^2-y^2-2x*x1-2y*y1-r^2>0){
+        printf("the point lies outside the circle\n");
+    }
+    return 0;
+
+}
